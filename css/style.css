@@ -1,0 +1,175 @@
+*
+{
+    box-sizing: border-box;
+    font-family: calibri;
+    margin: 0;
+    padding: 0;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.header
+{
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .company-logo a
+{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    font-weight: 600;
+}
+
+.header .cart-icon svg
+{
+    width: 2rem;
+
+}
+
+.cart-icon
+{
+    position: relative;
+    cursor: pointer;
+}
+
+
+.header .cart-icon span
+{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:blue;
+    color: white;
+    padding: 0.4rem;
+    border-radius: 50%;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    font-size: 0.8rem;
+    border: 1.5px solid white;
+}
+
+.cart-container
+{
+    background-color: white;
+    box-shadow: rgba(84, 85, 87, 0.2) 0px 8px 24px;
+    max-width: 400px;
+    /* padding: 1.2rem; */
+    float: right;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    display: none;
+    border-right: none;
+}
+
+.cart-header{
+    background-color: blue;
+    color: white;
+    padding: 0.8rem;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-header h4
+{
+    letter-spacing: 1px;
+}
+
+.cart-header #closecart
+{
+    padding: 0.2rem;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 1rem;
+}
+
+.cart-show
+{
+    display: block;
+}
+
+
+/* this is product list  */
+
+
+.product-listing-container
+{
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+
+}
+
+.product-listing-container .product-card
+{
+      box-shadow: rgba(84, 85, 87, 0.2) 0px 8px 24px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      justify-content: center;
+      align-items: center;
+}
+
+.product-card img
+{
+    width: 6rem;
+    filter: drop-shadow(2px 2px 2px lightpink);
+}
+
+.product-card h4 , p
+{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+#add-to-cart
+{
+    padding: 0.4rem 1.2rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+    background-color: white;
+    filter: drop-shadow(1px 1px 2px purple);
+    border: none;
+}
+
+@media screen and (max-width:824px) {
+    .product-listing-container
+    {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+@media screen and (max-width:612px) {
+    .product-listing-container
+    {
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+}
+
+
+
+
+
