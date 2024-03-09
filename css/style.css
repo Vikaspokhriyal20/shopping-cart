@@ -108,15 +108,14 @@ a {
 }
 
 .product-listing-container .product-card {
-    /* box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px; */
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
     justify-content: center;
     align-items: center;
-    border-radius: 4px;
-    background-color: #FFF8DE;
+    background-color: white;
 }
 
 .product-card img {
@@ -159,3 +158,4 @@ p {
         padding:0.8rem;
     }
 }
+
